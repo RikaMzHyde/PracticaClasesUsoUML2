@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+rectangle Biblioteca {
+  usecase "Reservar Libro" as UC1
+  usecase "Prestar Libro" as UC2
+  usecase "Devolver Libro" as UC3
+  usecase "Actualizar Catálogo" as UC4
+}
+Socio -- UC1
+Socio-- UC2
+Socio -- UC3
+
+Bibliotecario -- UC3
+Bibliotecario -- UC4
+@enduml
