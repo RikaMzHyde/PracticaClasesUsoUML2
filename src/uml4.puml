@@ -1,5 +1,5 @@
 @startuml
-left to right direction
+
 usecase "Evaluar Solicitud de Crédito" as usc1
 :Agente: --> usc1
 
