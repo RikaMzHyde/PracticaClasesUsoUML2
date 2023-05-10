@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+usecase "Evaluar Solicitud de Crédito" as usc1
+:Agente: --> usc1
+
+usecase "Solicitar Información adicional al cliente" as usc2
+
+usc2 ..> usc1 : <<extend>>
+@enduml
