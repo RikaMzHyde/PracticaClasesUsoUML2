@@ -1,0 +1,9 @@
+@startuml
+left to right direction
+actor "Empleado" as emp
+actor "Administrador" as adm
+rectangle "Empresa Pedidos" as EmpresaPedidos {
+}
+emp -- EmpresaPedidos
+adm -- EmpresaPedidos
+@enduml
