@@ -1,0 +1,28 @@
+@startuml
+left to right direction
+actor "Empleado" as emp
+
+usecase "Introducir Pedido" as UC1
+usecase "Cancelar Pedido" as UC2
+usecase "Obtener Estado Pedido" as UC3
+usecase "Pago con tarjeta" as UC4
+usecase "Buscar Pedidos" as UC5
+usecase "Alta Cliente" as UC6
+usecase "Buscar Cliente" as UC7
+usecase "Pago en cuenta" as UC8
+
+
+emp -- UC1
+emp -- UC2
+emp -- UC3
+emp -- UC5
+emp -- UC6
+
+
+UC1 ..>UC7 : incluye
+UC6 ..>UC1 : extiende
+UC3 ..>UC5 : incluye
+UC2 ..>UC5 : incluye
+UC8 ..>UC1 : extiende
+UC4 ..>UC1 : extiende
+@enduml
