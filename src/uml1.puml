@@ -1,0 +1,16 @@
+@startuml
+left to right direction
+
+rectangle Sistema {
+  usecase "caso de uso1" as UC1
+  usecase "caso de uso2" as UC2
+  usecase "caso de uso3" as UC3
+}
+Actor -- UC1
+Actor -- UC2
+Actor -- UC3
+
+Actor2 -- UC2
+Actor2 -- UC3
+
+@enduml
